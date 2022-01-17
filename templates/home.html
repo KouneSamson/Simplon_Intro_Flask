@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}">
+    </head>
+    <body>
+        <h1>{{message}}</h1>
+        <form action="{{url_for('town')}}" method="POST">
+            <input type="text" name="text"><button type="submit">GO</button>
+        </form>
+    </body>
+</html>
